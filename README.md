@@ -10,6 +10,10 @@ To activate the created environment
 
 * **source env_name/bin/activate**
 
+now install the required packages by running the following command
+
+* **pip install -r requirements.txt**
+
 RUN **rasa train** so it will train using pretrained weights
 
 after that run **rasa shell** 
