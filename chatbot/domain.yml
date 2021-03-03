@@ -1,0 +1,67 @@
+version: "2.0"
+
+intents:
+  - greet
+  - order
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - items
+  - area
+  - location
+  - checkotp
+  - otp
+  - restaurants_names
+  - name
+  - rs_selection
+  - resto_name
+  - number
+  - enter_mobile
+
+actions:
+  - ask_resto
+  - item_selection
+  - item_save
+  - order_location
+  - sending_otp
+  - save_in_db
+
+
+responses:
+  utter_greet:
+  - text: "Hi, How can i help you ?"
+
+  utter_name:
+  - text: "Please tell me your name."
+
+  utter_item:
+  - text: "What do you want to order indian or chaines food?"
+
+  utter_out_location:
+  - text: "Sorry you are out of our service."
+
+  utter_successful:
+  - text: "Your order has been placed successfully. You will recive a call from delivery boy shortly. Thank you :)"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,630 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: order
+  examples: |
+    - i want to place an order
+    - place an order
+    - please get me some restaurants near me
+    - please get me some restaurants
+    - i am looking for some restaurants  near me
+    - i am looking for some restaurants
+    - get me some restaurants
+    - looking for some restaurants
+    - get me some restaurants please
+    - hey i am looking for some restaurants
+    - looking for some restraunts
+    - get me few restaurants
+    - please provide me a list of restaurants
+    - looking for some food points
+    - i am hungry
+    - tell me some food points near to me
+    - give me some food stalls
+    - tell me some restaurants
+    - give me some restaurants
+    - get me a list of restaurants near to me
+    - provide me some restaurants
+    - hey can you help me to find some restaurants nearby
+    - please get me a list of restaurants
+    - please get me a list of restaurants near by
+    - please help me find some restaurants
+    - get me some restaurants near by
+    - get me some restaurants near me
+    - i am hungry get me some restaurants near by
+    - please get me some restaurants near by
+    - please get me a list of all restaurants near by
+    - please get me all the restaurants near by
+    - please give me a list of restaurants
+    - get me a list of restaurants
+    - please find me some restaurants
+    - please get me a list of all restaurants
+    - get me a list of all restaurants near to me
+    - tell me some restaurants here
+    - i am hungry please tell me some restaurants near to me
+    - i want to eat something please tell me some location near by
+    - please tell me some food points here
+    - get me some restaurants neary by
+    - get me some food points
+    - find some food places near to me
+    - get me some restaurants near to me
+    - i am looking for some food points
+    - i am looking for restaurants
+    - get me some flight details
+    - ok get me some restaurants nearby
+    - get me some restaurants nearby
+    - get me some restaurants in chennai
+    - get me some restaurants i am hungry
+    - i am hungry please get me some restaurants
+    - need food
+    - please get me pizza stores
+    - get me some restaurants near
+    - get  me some restaurants
+
+- intent: name
+  examples: |
+    - [Durga](name)
+    - [Manikanta](name)
+    - [Raju](name)
+
+- intent: restaurants_names
+  examples: |
+    - [B-Dubs](resto_name)
+    - [Diners Pavilion](resto_name)
+    - [The Indi Grill](resto_name)
+    - [Jonathan's Kitchen - Holiday Inn Express & Suites](resto_name)
+    - [Banana Leaf Multicuisine Restaurant](resto_name)
+    - [Republic Of Noodles - Lemon Tree Hotel](resto_name)
+    - [3B's - Buddies, Bar & Barbecue](resto_name)
+    - [Flechazo](resto_name)
+    - [Hotel Zara Hi-Fi](resto_name)
+    - [The Fisherman's Wharf](resto_name)
+    - [Club Rogue](resto_name)
+    - [Tiki Shack](resto_name)
+    - [Eat India Company](resto_name)
+    - [Feast - Sheraton Hyderabad Hotel](resto_name)
+    - [Hitech Bawarchi Food Zone](resto_name)
+    - [Collage - Hyatt Hyderabad Gachibowli](resto_name)
+    - [La La Land - Bar & Kitchen](resto_name)
+    - [Owm Nom Nom](resto_name)
+    - [eat.fit](resto_name)
+    - [The Foodie Monster Kitchen](resto_name)
+    - [10 Downing Street](resto_name)
+    - [Paradise](resto_name)
+    - [Frio Bistro](resto_name)
+    - [Hyderabad Chefs](resto_name)
+    - [Sweet Basket](resto_name)
+    - [Pot Pourri](resto_name)
+    - [Beyond Flavours](resto_name)
+    - [Marsala Food Company](resto_name)
+    - [Being Hungry](resto_name)
+    - [Driven Cafe](resto_name)
+    - [Angaara Counts 3](resto_name)
+    - [Karachi Cafe](resto_name)
+    - [Cream Stone](resto_name)
+    - [Delhi-39](resto_name)
+    - [Barbeque Nation](resto_name)
+    - [Kritunga Restaurant](resto_name)
+    - [Urban Asia - Kitchen & Bar](resto_name)
+    - [13 Dhaba](resto_name)
+    - [Cascade - Radisson Hyderabad Hitec City](resto_name)
+    - [Behrouz Biryani](resto_name)
+    - [Cafe Eclat](resto_name)
+    - [Prism Club & Kitchen](resto_name)
+    - [Arena Eleven](resto_name)
+    - [The Chocolate Room](resto_name)
+    - [Sardarji's Chaats & More](resto_name)
+    - [Dunkin' Donuts](resto_name)
+    - [Olive Garden](resto_name)
+    - [Mazzo - Marriott Executive Apartments](resto_name)
+    - [Asian Meal Box](resto_name)
+    - [NorFest - The Dhaba](resto_name)
+    - [GD's](resto_name)
+    - [Al Saba Restaurant](resto_name)
+    - [Karachi Bakery](resto_name)
+    - [The Lal Street - Bar Exchange](resto_name)
+    - [Biryanis And More](resto_name)
+    - [Khaan Saab](resto_name)
+    - [IndiBlaze](resto_name)
+    - [T Grill](resto_name)
+    - [Hyderabadi Daawat](resto_name)
+    - [Aromas@11SIX](resto_name)
+    - [Labonel](resto_name)
+    - [Gal Punjab Di](resto_name)
+    - [Ulavacharu](resto_name)
+    - [Tempteys](resto_name)
+    - [KFC](resto_name)
+    - [Momos Delight](resto_name)
+    - [Over The Moon Brew Company](resto_name)
+    - [The Glass Onion](resto_name)
+    - [AB's - Absolute Barbecues](resto_name)
+    - [Shah Ghouse Hotel & Restaurant](resto_name)
+    - [The Tilt Bar Republic](resto_name)
+    - [Absolute Sizzlers](resto_name)
+    - [Green Bawarchi Restaurant](resto_name)
+    - [Pakwaan Grand](resto_name)
+    - [Desi Bytes](resto_name)
+    - [Hyper Local](resto_name)
+    - [Royal Spicy Restaurant](resto_name)
+    - [Mathura Vilas](resto_name)
+    - [SKYHY](resto_name)
+    - [Shree Santosh Dhaba Family Restaurant](resto_name)
+    - [Triptify](resto_name)
+    - [Zing's Northeast Kitchen](resto_name)
+    - [PourHouse7](resto_name)
+    - [Shanghai Chef 2](resto_name)
+    - [Wich Please](resto_name)
+    - [American Wild Wings](resto_name)
+    - [Dine O China](resto_name)
+    - [Shah Ghouse Spl Shawarma](resto_name)
+    - [Udipi's Upahar](resto_name)
+    - [Komatose - Holiday Inn Express & Suites](resto_name)
+    - [Faasos](resto_name)
+    - [KS Bakers](resto_name)
+    - [Squeeze @ The Lime](resto_name)
+    - [Amul](resto_name)
+    - [Mustang Terrace Lounge](resto_name)
+    - [Zega - Sheraton Hyderabad Hotel](resto_name)
+    - [Hunger Maggi Point](resto_name)
+    - [Mohammedia Shawarma](resto_name)
+    - [Pista House](resto_name)
+    - [Deli 9 Bistro](resto_name)
+    - [Yum Yum Tree - The Arabian Food Court](resto_name)
+    - [Tandoori Food Works](resto_name)
+    - [The Old Madras Baking Company](resto_name)
+    - [Chinese Pavilion](resto_name)
+    - [Domino's Pizza](resto_name)
+
+- intent: items
+  examples: |
+    - [Aloo Paratha](item_name)
+    - [Onion Paratha](item_name)
+    - [Sweet Dalia](item_name)
+    - [Plain Paratha](item_name)
+    - [Wheat Dosa](item_name)
+    - [Whole Wheat Pancakes](item_name)
+    - [Whole Wheat Waffles](item_name)
+    - [Ajwain Paratha](item_name)
+    - [Jeera Paratha](item_name)
+    - [Dal Paratha](item_name)
+    - [Sugar Paratha](item_name)
+    - [Masala Paratha](item_name)
+    - [Roti ](item_name)
+    - [phulka ](item_name)
+    - [Poori](item_name)
+    - [Masala Poori](item_name)
+    - [Butter Naan](item_name)
+    - [Gulgule](item_name)
+    - [Wheat Nankhatai](item_name)
+    - [Wheat Ladoo](item_name)
+    - [Panjiri](item_name)
+    - [Wheat Halwa](item_name)
+    - [Kada Prashad](item_name)
+    - [Pita Bread](item_name)
+    - [Tandoori Roti](item_name)
+    - [Khasta Roti](item_name)
+    - [Baked Aloo Samosa](item_name)
+    - [Rava Upma](item_name)
+    - [Rava Dosa](item_name)
+    - [Rava Idli](item_name)
+    - [Rava Chilla](item_name)
+    - [Rava Dhokla](item_name)
+    - [Rava Pongal](item_name)
+    - [Sooji Halwa](item_name)
+    - [Rava Kesari](item_name)
+    - [Rava Ladoo](item_name)
+    - [Rava Kichadi](item_name)
+    - [Rava Uttapam](item_name)
+    - [Onion Rava Dosa](item_name)
+    - [Butter Rava Dosa](item_name)
+    - [Kesari bath](item_name)
+    - [Sooji Kheer](item_name)
+    - [Milk Kesari](item_name)
+    - [Neer Dosa](item_name)
+    - [Ghee Rice](item_name)
+    - [Jeera Rice](item_name)
+    - [Potato Rice](item_name)
+    - [Curd Rice](item_name)
+    - [Matar Pulao](item_name)
+    - [Tamarind Rice](item_name)
+    - [Saffron Rice](item_name)
+    - [Butter Rice](item_name)
+    - [Ven Pongal](item_name)
+    - [Sweet Pongal](item_name)
+    - [Biryani](item_name)
+    - [Ney Choru - Kerala Style Ghee Rice](item_name)
+    - [Rice Kheer](item_name)
+    - [Rice Pudding](item_name)
+    - [Parsi Brown Rice](item_name)
+    - [Phirni](item_name)
+    - [Paal Payasam](item_name)
+    - [Poha Idli](item_name)
+    - [Aval Laddu](item_name)
+    - [Curd Dosa](item_name)
+    - [Instant Poha Idli](item_name)
+    - [Onion Poha](item_name)
+    - [Poha Upma](item_name)
+    - [Potato Poha](item_name)
+    - [Paper Dosa](item_name)
+    - [Poha Cutlet](item_name)
+    - [Chura Matar](item_name)
+    - [Sweet Poha](item_name)
+    - [Onion Potato Poha](item_name)
+    - [Idli](item_name)
+    - [Uttapam](item_name)
+    - [Set Dosa](item_name)
+    - [Sada Dosa](item_name)
+    - [Crispy Dosa](item_name)
+    - [Masala Dosa](item_name)
+    - [Ghee Roast Dosa](item_name)
+    - [Kanchipuram Idli](item_name)
+    - [Davangere Benne Dosa](item_name)
+    - [Andhra Style Idli](item_name)
+    - [Cooked Rice Idli](item_name)
+    - [Paniyaram](item_name)
+    - [Onion Uttapam](item_name)
+    - [Onion Tomato Uttapam](item_name)
+    - [Churumuri - Karnataka](item_name)
+    - [Easy Puffed Rice Recipe](item_name)
+    - [Jhal Muri - Kolkata](item_name)
+    - [Bhel Puri - Mumbai](item_name)
+    - [Pori Urundai](item_name)
+    - [Akki Roti - Karnataka Cuisine](item_name)
+    - [Instant Idli](item_name)
+    - [Wheat Paniyaram](item_name)
+    - [No Grind Easy Dosa](item_name)
+    - [Besan Chilla](item_name)
+    - [Missi Roti](item_name)
+    - [Besan Halwa](item_name)
+    - [Gatte ki Sabji](item_name)
+    - [Besan Ladoo](item_name)
+    - [Moong Dal Dosa](item_name)
+    - [Moong Dal Khichdi](item_name)
+    - [Moong Dal Fry](item_name)
+    - [Moong Dal Tadka](item_name)
+    - [Moong Dal Chilla](item_name)
+    - [Moong Dal Halwa](item_name)
+    - [Moong Sprouts Sabzi](item_name)
+    - [Mixed Sprouts Curry](item_name)
+    - [Sabut moong dal](item_name)
+    - [Parippu Curry](item_name)
+    - [Pasi paruppu payasam](item_name)
+    - [Dhokla](item_name)
+    - [Cholar Dal - Bengali Cuisine](item_name)
+    - [Puran Poli](item_name)
+    - [Chana Dal Khichdi - Punjabi](item_name)
+    - [Chana Dal Fry](item_name)
+    - [Chana Dal Sundal](item_name)
+    - [Langarwali Dal - Amritsari Dal](item_name)
+    - [Maah Chole di Dal](item_name)
+    - [Chana Dal Payasam](item_name)
+    - [Dal Bukhara](item_name)
+    - [Dal Makhani](item_name)
+    - [Urad Dal Dosa](item_name)
+    - [Urad Dal Ladoo](item_name)
+    - [Kali Dal](item_name)
+    - [Sukhi Urad Dal](item_name)
+    - [Dal Fry Restaurant Style](item_name)
+    - [Dal Tadka Restaurant Style](item_name)
+    - [Gujarati Dal](item_name)
+    - [Khatti Meethi Dal](item_name)
+    - [Gujarati Surati Dal](item_name)
+    - [Punjabi Arhar Dal fry](item_name)
+    - [Maharashtrian Varan Bhaat](item_name)
+    - [Goan Varan Bhaat](item_name)
+    - [Konkani Dali Toye](item_name)
+    - [Hyderabadi Khatti Dal](item_name)
+    - [Parsi Dal](item_name)
+    - [Masoor Dal](item_name)
+    - [Sabut Masoor Dal](item_name)
+    - [Akkha masoor - Kolhapuri Cuisine](item_name)
+    - [Adai](item_name)
+    - [Gujarati Trevti Dal](item_name)
+    - [Mixed Dal Dosa](item_name)
+    - [Dhaba Style Dal Fry](item_name)
+    - [Rajasthani Panchmel Dal](item_name)
+    - [Punjabi Chana Masala](item_name)
+    - [Vegan Chickpea Curry ](item_name)
+    - [South Indian Chana Masala](item_name)
+    - [Homestyle Easy Chana Masala](item_name)
+    - [Pindi Chole](item_name)
+    - [Amritsari Chole](item_name)
+    - [Peshawari Chole](item_name)
+    - [Kadai Chole](item_name)
+    - [Aloo Chole](item_name)
+    - [Dry Chana ](item_name)
+    - [Chana Pulao](item_name)
+    - [Chana Biryani](item_name)
+    - [Chana Sundal](item_name)
+    - [Aloo Chana Chaat](item_name)
+    - [White Chickpeas Chaat](item_name)
+    - [Hummus](item_name)
+    - [Punjabi Kala Chana Curry](item_name)
+    - [Kadala Curry - Kerala Cuisine](item_name)
+    - [Kala Chana Ghugni - Bihari Cuisine](item_name)
+    - [Kala Chana Usal - Malvani Recipe](item_name)
+    - [Sookha Kala Chana - Punjabi Style](item_name)
+    - [Black Chickpeas Chaat](item_name)
+    - [Kala Chana Sundal](item_name)
+    - [Rajma Masala Restaurant Style](item_name)
+    - [Rajma Pulao](item_name)
+    - [Rajma Madra - Himachali Cuisine](item_name)
+    - [Jammu Style Rajma Recipe](item_name)
+    - [Rajma Sundal](item_name)
+    - [Punjabi Lobia Masala](item_name)
+    - [Lobia Pulao](item_name)
+    - [Vellapayar curry - Kerala Style curry](item_name)
+    - [Chawli Usal - Maharashtrian Cuisine](item_name)
+    - [Lobia Sabzi](item_name)
+    - [Dum Aloo Restaurant Style](item_name)
+    - [Kashmiri Dum Aloo](item_name)
+    - [Banarasi Dum Aloo](item_name)
+    - [Bengali Dum Aloor](item_name)
+    - [Punjabi Dum Aloo](item_name)
+    - [Jeera Aloo](item_name)
+    - [Hing Jeera Aloo](item_name)
+    - [Vrat ke Jeera Aloo](item_name)
+    - [Potato Stew - Kerala style](item_name)
+    - [Aloo Puri](item_name)
+    - [Potato Bhaji](item_name)
+    - [Poori Masala](item_name)
+    - [Aloo Jhol](item_name)
+    - [Potato Sagu](item_name)
+    - [Potato Curry](item_name)
+    - [Potato Kurma](item_name)
+    - [Aloo Posto - Traditional Bengali](item_name)
+    - [recipe](item_name)
+    - [Potato Fry](item_name)
+    - [Baked Potato Chips](item_name)
+    - [Aloo Matar Gravy](item_name)
+    - [Aloo Matar ki Sabji](item_name)
+    - [Aloo Tamatar ki Sabji](item_name)
+    - [Potato Salad](item_name)
+    - [Potato Dum Biryani](item_name)
+    - [Mashed Potatoes - American Style](item_name)
+    - [Potato Podimas - South Indian Style](item_name)
+    - [Aloo Chokha](item_name)
+    - [Aloo Rasedar](item_name)
+    - [Mathura ke Dubki wale Aloo](item_name)
+    - [Lasaniya batata](item_name)
+    - [Batata nu shaak](item_name)
+    - [Batata bhaji](item_name)
+    - [Potato roast](item_name)
+    - [Matar ki Sabzi](item_name)
+    - [Green Peas Curry](item_name)
+    - [Green Peas Sundal](item_name)
+    - [Green Peas Korma](item_name)
+    - [Green Peas Paratha](item_name)
+    - [Matar ka Nimona](item_name)
+    - [Peas Usal](item_name)
+    - [Tomato Omelette](item_name)
+    - [Tomato Chutney](item_name)
+    - [Tomato Pachadi](item_name)
+    - [Tomato Rasam](item_name)
+    - [Tomato Soup](item_name)
+    - [Tomato Rice](item_name)
+    - [Tomato Bath](item_name)
+    - [Tomato Dal](item_name)
+    - [Tomato Upma](item_name)
+    - [Tomato Sambar](item_name)
+    - [Tomato Curry](item_name)
+    - [Shorba](item_name)
+    - [Tomato Saar](item_name)
+    - [Tomato Charu](item_name)
+    - [Tomato Raita](item_name)
+    - [Tomato Chokha](item_name)
+    - [Tomato Salsa](item_name)
+    - [Tomato Bhaji](item_name)
+    - [Tomato Shorba](item_name)
+    - [Roasted Tomato Soup](item_name)
+    - [Cream of Tomato Soup](item_name)
+    - [Onion Tomato Chutney](item_name)
+    - [Instant Pot Tomato Rasam](item_name)
+    - [Rasam](item_name)
+    - [Milagu Rasam – Pepper Rasam](item_name)
+    - [Garlic Rasam](item_name)
+    - [Tamarind Rasam](item_name)
+    - [Paruppu rasam - with lentils](item_name)
+    - [Jeera Milagu Rasam – Pepper Cumin](item_name)
+    - [Rasam](item_name)
+    - [Onion Salad](item_name)
+    - [Onion Chutney](item_name)
+    - [Pickled Onions](item_name)
+    - [Vengaya Sambar](item_name)
+    - [Ulli Theeyal](item_name)
+    - [Oats Idli](item_name)
+    - [Oats Dosa](item_name)
+    - [Oats Upma](item_name)
+    - [Oats Uttapam](item_name)
+    - [Oats Chilla](item_name)
+    - [Oats kheer](item_name)
+    - [Oats Khichdi](item_name)
+    - [Oats porridge](item_name)
+    - [Oatmeal Cookies](item_name)
+    - [Ragi Dosa](item_name)
+    - [Ragi Malt](item_name)
+    - [Ragi Idli](item_name)
+    - [Ragi Kheer](item_name)
+    - [Ragi Ladoo](item_name)
+    - [Ragi Halwa](item_name)
+    - [Instant Ragi Dosa](item_name)
+    - [Jaggery Roti](item_name)
+    - [Jaggery Rice](item_name)
+    - [Nolen Gurer Payesh - Bengali Recipe](item_name)
+    - [Mishti Doi](item_name)
+    - [Badam Milk](item_name)
+    - [Badam Kheer](item_name)
+    - [Badam Halwa](item_name)
+    - [Badam Laddoo](item_name)
+    - [Peanut Chutney](item_name)
+    - [Peanut Thecha](item_name)
+    - [Peanut Rice](item_name)
+    - [Peanut Ladoo](item_name)
+    - [Peanut Amti](item_name)
+    - [Kaju Katli](item_name)
+    - [Kaju Curry](item_name)
+    - [Cashew Pulao](item_name)
+    - [Dry Fruits Burfi](item_name)
+    - [Dry Fruits Ladoo](item_name)
+    - [Dry Fruits Milkshake](item_name)
+    - [Lemon Rice](item_name)
+    - [Lemon Rasam](item_name)
+    - [Lemon Pickle](item_name)
+    - [Nimbu Pani](item_name)
+    - [Lemon Mojito](item_name)
+    - [Lemon Coriander Soup](item_name)
+    - [Vermicelli Kheer](item_name)
+    - [Vermicelli Payasam](item_name)
+    - [Vermicelli Upma](item_name)
+    - [Sheer Khurma](item_name)
+    - [Meethi Seviyan](item_name)
+    - [Sabudana Vada](item_name)
+    - [Sabudana Kheer](item_name)
+    - [Sabudana Khichdi](item_name)
+    - [Sabudana Payasam](item_name)
+    - [Sabudana Thalipeeth](item_name)
+    - [Lassi](item_name)
+    - [Shrikhand](item_name)
+    - [Piyush](item_name)
+    - [Curd Rasam ](item_name)
+    - [Buttermilk](item_name)
+    - [Dahi Aloo](item_name)
+    - [Punjabi Kadhi](item_name)
+    - [Gujarati Kadhi](item_name)
+    - [Rajasthani Kadhi](item_name)
+    - [Maharashtrian Kadhi](item_name)
+    - [Cheese Dosa](item_name)
+    - [Cheese Paratha](item_name)
+    - [Ginger Tea](item_name)
+    - [Carrot Ginger Soup](item_name)
+    - [Gingerbread Cake](item_name)
+    - [Hot Chocolate](item_name)
+    - [Chocolate Pudding](item_name)
+    - [Chocolate Cake](item_name)
+    - [Chocolate Lava Cake](item_name)
+    - [Thandai](item_name)
+    - [Green Tea](item_name)
+    - [Kahwa Tea](item_name)
+    - [Herbal Tea](item_name)
+    - [Masala Chai](item_name)
+    - [Filter Coffee](item_name)
+    - [Sattu Sherbet](item_name)
+    - [Turmeric milk](item_name)
+    - [7 Cup Burfi](item_name)
+    - [Coconut Chutney](item_name)
+    - [Vegetable Stew](item_name)
+    - [Coconut Rice](item_name)
+    - [Coconut Cookies](item_name)
+    - [Coconut Milk Rasam](item_name)
+    - [Sorak Curry – Traditional Goan Curry](item_name)
+    - [Narkel Naru](item_name)
+
+- intent: location
+  examples: |
+    - [Madhapur](area)
+    - [kphb](area)
+    - [kukatpally housing board colony](area)
+    - [kukatpally](area)
+    - [panjagutta](area)
+    - [SR Nagar](area)
+    - [Hitech city](area)
+    - [ameerpet](area)
+
+- intent: enter_mobile
+  examples: |
+    - [8790676674](number)
+    - [8328094440](number)
+
+- intent: checkotp
+  examples: |
+    - OKAY
+
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

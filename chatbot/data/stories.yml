@@ -1,0 +1,82 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: order path
+  steps:
+  - intent: order
+  - action: utter_name
+  # - intent: order
+  # - action: utter_item
+
+- story: name_path
+  steps:
+  - intent: name
+  - action: ask_resto
+
+- story: item selection
+  steps: 
+  - intent: restaurants_names
+  - action: item_selection
+
+- story: items names
+  steps:
+  - intent: items
+  - action: item_save
+
+- story: order area 
+  steps:
+  - intent: location
+  - action: order_location
+
+- story: onetimepassword
+  steps:
+  - intent: enter_mobile
+  - action: sending_otp
+
+- story: otp_success
+  steps:
+  - intent: checkotp
+  - action: save_in_db
+
+# - story: verify otp
+#   steps:
+#   - intent: checkotp
+#   - action: utter_successful
+
+
+# - story: item type selection
+#   steps:
+#   - intent: item
+#   - action: utter_location
+
+
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: location
+  - action: utter_out_location
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
