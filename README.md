@@ -14,7 +14,7 @@ now install the required packages by running the following command
 
 * **pip install -r requirements.txt**
 
-RUN **rasa train** so it will train using pretrained weights
+run **rasa train** so it will train chatbot using pretrained models
 
 after that run **rasa shell** 
 now the bot is ready. 
